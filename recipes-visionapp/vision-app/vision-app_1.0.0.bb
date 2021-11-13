@@ -7,7 +7,6 @@ FILESEXTRAPATHS_prepend := "${THISDIR}:"
 
 
 SRC_URI += "file://setup.py \
-      file://vision-app.py \
       file://visionapp/__init__.py \
       file://visionapp/main.py"
 
@@ -17,6 +16,5 @@ inherit setuptools3
 
 do_install_append () { 
     install -d ${D}${bindir} 
-    install -m 0755 vision-app.py ${D}${bindir} 
 } 
 

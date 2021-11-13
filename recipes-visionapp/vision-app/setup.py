@@ -11,4 +11,5 @@ setup(
         license="MIT",
         keywords= "opencv",
         url="",
+        entry_points = {"console_scripts":["visionapp = visionapp.main:main"]},
         )
